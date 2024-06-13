@@ -29,5 +29,4 @@ test.only('demo login test 3', async ({ page }) => {
     await page.getByLabel('Password:').fill('admin');
     await page.getByRole('button', { name: 'Log in' }).click();
     await page.getByRole('link', { name: 'Logout' }).click();
-    await page.pause()
 })
